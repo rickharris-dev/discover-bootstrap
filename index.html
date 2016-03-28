@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Acme, inc.</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mobile-menu">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services  <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Financial services</a></li>
+                <li><a href="#">Real estate</a></li>
+                <li><a href="#">Insurances</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Pharmaceuticals</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="navbar-text">John Doe</li>
+            <li><a href="#">Log out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Innovation at its core</h1>
+        <p>Donec id elit non mi porta at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+          Donec sed odio dui. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button" title="What's behind that link" data-toggle="popover" data-placement="right" data-content="Tons of information about Acme's products and services. Click now, you won't be disappointed!" data-trigger="hover">Learn more about Acme, inc. >></a></p>
+      </div>
+      <div>
+        <div class="col-md-4 col-sm-6">
+          <h3>Heading</h3>
+          <p>Donec id elit non mi porta at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+            Donec sed odio dui. Donec sed odio dui. Donec sed odio dui.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details >></a></p>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <h3>Heading</h3>
+          <p>Donec id elit non mi porta at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+            Donec sed odio dui.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details >></a></p>
+        </div>
+        <div class="clearfix visible-sm"></div>
+        <div class="col-md-4 col-sm-6">
+          <h3>Heading</h3>
+          <p>Donec id elit non mi porta at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+            Donec sed odio dui.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details >></a></p>
+        </div>
+        <div class="clearfix visible-md visible-lg"></div>
+        <div class="col-md-4 col-sm-6">
+          <h3>Heading</h3>
+          <p>Donec id elit non mi porta at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+            Donec sed odio dui.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details >></a></p>
+        </div>
+        <div class="clearfix visible-sm"></div>
+        <div class="col-md-4 col-sm-6">
+          <h3>Heading</h3>
+          <p>Donec id elit non mi porta at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+            Donec sed odio dui.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details >></a></p>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <h3>Heading</h3>
+          <p>Donec id elit non mi porta at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+            Donec sed odio dui.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details >></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="panel-group" id="faq">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#question1" data-parent="#faq">Question #1</a>
+            </h4>
+          </div>
+          <div id="question1" class="panel-collapse collapse">
+            <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#question2" data-parent="#faq">Question #2</a>
+            </h4>
+          </div>
+          <div id="question2" class="panel-collapse collapse">
+            <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#question3" data-parent="#faq">Question #3</a>
+            </h4>
+          </div>
+          <div id="question3" class="panel-collapse collapse">
+            <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <hr>
+      <p>&copy; 2016 Acme, inc.</p>
+    </div>
+  </body>
+</html>
